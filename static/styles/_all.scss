@@ -20,18 +20,18 @@ body {
   }
 
   a {
-    color: #8953b7;
+    color: #ef5455;
 
     &:hover,
     &:active {
-      color: #8953b7;
+      color: #ef5455;
     }
   }
 
   header {
-    background-color: #fdfaff;
+    background-color: #fff;
     align-items: center;
-    padding: 39px 0;
+    padding: 26px 0;
 
     .logo {
       display: flex;
@@ -49,16 +49,54 @@ body {
 
       .download-app {
         span {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           width: 160px;
           height: 47px;
           letter-spacing: 0.03em;
           font-size: 16px;
-          line-height: 47px;
-          display: block;
-          background: #ef5455;
+          background: #122932;
           border-radius: 5px;
           text-align: center;
           color: #ffffff;
+          cursor: pointer;
+
+          p {
+            margin: 0;
+            margin-top: 5px;
+            font-size: 10px;
+            line-height: 10px;
+            color: #fff;
+          }
+        }
+      }
+
+      @media screen and (max-width: $break-small) {
+        .logo {
+          flex: 1;
+
+          img {
+            max-width: 160px;
+          }
+        }
+
+        .download-app {
+          align-items: flex-end;
+          height: 36px;
+          width: 100px;
+
+          span {
+            width: 100px;
+            height: 36px;
+            font-size: 12px;
+            margin-right: 0px;
+
+            p {
+              font-size: 8px;
+            }
+          }
         }
       }
     }
@@ -68,15 +106,14 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 40px 0 100px 0;
-    background-color: #fdfaff;
-    border-radius: 0px 0px 40px 40px;
+    background-color: #fff;
+    height: calc(100vh - 109px);
 
     h1 {
       font-style: normal;
       font-weight: bold;
       font-size: 48px;
-      color: #1e1c21;
+      color: #122932;
       padding: 0 0 15px 0;
       line-height: 54px;
     }
@@ -96,9 +133,20 @@ body {
       line-height: 34px;
     }
 
+    .home-header-text {
+      width: 44%;
+      text-align: left;
+    }
+
+    .home-header-image {
+      width: 56%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
     img {
-      margin-top: 61px;
-      max-width: 65%;
+      margin-top: 20px;
+      max-width: 84%;
     }
 
     &.home {
@@ -106,16 +154,37 @@ body {
     }
 
     @media screen and (max-width: $break-small) {
-      padding-top: 1px;
-      padding-bottom: 50px;
+      flex-direction: column;
+      height: auto;
 
       h1,
       h2 {
         padding-top: 0;
       }
 
-      img {
-        max-width: 80%;
+      .home-header-text {
+        width: 100%;
+
+        h1 {
+          font-size: 36px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding-bottom: 0;
+        }
+
+        p {
+          margin-top: 0;
+        }
+      }
+
+      .home-header-image {
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+
+        img {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -221,7 +290,7 @@ body {
         justify-content: center;
         font-weight: bold;
         flex-direction: column;
-        color: #8953b7;
+        color: #122932;
 
         @media screen and (max-width: $break-small) {
           margin: 0 auto;
@@ -331,7 +400,7 @@ body {
   }
 
   footer {
-    padding: 120px 0 45px;
+    padding: 36px 0 45px;
 
     @media screen and (max-width: $break-small) {
       padding: 50px 0 45px;
@@ -340,6 +409,12 @@ body {
     .widget__item {
       @media screen and (max-width: $break-small) {
         padding: 15px 0 0;
+      }
+
+      .logo {
+        img {
+          max-width: 200px;
+        }
       }
 
       .about {
@@ -372,14 +447,14 @@ body {
 
               &:hover,
               &:active {
-                color: #8953b7;
+                color: #ef5455;
               }
             }
           }
         }
 
         .links__special {
-          background-color: #8953b7;
+          background-color: #ef5455;
           color: #ffffff;
           border-radius: 4px;
           padding: 2px 5px;

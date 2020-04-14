@@ -14,7 +14,10 @@ const Header = ({ siteTitle }) => (
         </div>
 
         <div className="download-app">
-          <span>Download App</span>
+          <span>
+            Download App
+            <p>(Summer 2020)</p>
+          </span>
         </div>
       </div>
     </div>
