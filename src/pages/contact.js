@@ -43,6 +43,10 @@ const ContactContainer = styled.div`
   .content {
     padding-bottom: 86px;
   }
+
+  @media screen and (max-width: 719px) {
+    height: auto;
+  }
 `;
 
 export default ContactPage;
