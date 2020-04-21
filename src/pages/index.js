@@ -6,7 +6,7 @@ import featureImage from '../../static/images/coaster-feature.png';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Breeze Through Bar Lines | Coaster App" />
+    <SEO title="Breeze Through Bar Lines" />
 
     <div className="page-header home container">
       <div className="home-header-text">
